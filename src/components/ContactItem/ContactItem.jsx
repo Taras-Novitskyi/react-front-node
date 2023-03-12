@@ -7,7 +7,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import { deleteContact } from 'redux/operation';
 
-export const ContactItem = ({ id, name, number }) => {
+export const ContactItem = ({ id, name, phone }) => {
   const dispatch = useDispatch();
 
   const handleDelete = id => {
@@ -15,7 +15,7 @@ export const ContactItem = ({ id, name, number }) => {
     return dispatch(deleteContact(id));
   };
 
-  const LinkTo = `tel:${number}`;
+  const LinkTo = `tel:${phone}`;
 
   return (
     <Box
@@ -45,7 +45,7 @@ export const ContactItem = ({ id, name, number }) => {
           }}
         >
           <PhoneIphoneIcon sx={{ color: 'action.active', mr: 1 }} />
-          {number}
+          {phone}
         </Link>
       </Container>
       <IconButton
@@ -63,6 +63,6 @@ export const ContactItem = ({ id, name, number }) => {
 
 ContactItem.propTypes = {
   name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  phone: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };

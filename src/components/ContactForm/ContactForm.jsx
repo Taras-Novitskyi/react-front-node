@@ -15,24 +15,24 @@ export function ContactForm({ onSubmit }) {
   const handleSubmit = event => {
     event.preventDefault();
     const name = event.target.elements.name.value;
-    const inputNumber = event.target.elements.number.value;
-    let number = inputNumber;
+    const inputNumber = event.target.elements.phone.value;
+    let phone = inputNumber;
     if (inputNumber.length <= 7) {
-      number =
+      phone =
         inputNumber.substr(0, 3) +
         '-' +
         inputNumber.substr(3, 2) +
         '-' +
         inputNumber.substr(4, 2);
     } else if (inputNumber.length > 7 && inputNumber.length <= 10) {
-      number =
+      phone =
         inputNumber.substr(0, 3) +
         '-' +
         inputNumber.substr(3, 3) +
         '-' +
         inputNumber.substr(6, 4);
     } else if (inputNumber.length > 10) {
-      number =
+      phone =
         inputNumber.substr(0, 3) +
         '-' +
         inputNumber.substr(3, 3) +
@@ -43,7 +43,7 @@ export function ContactForm({ onSubmit }) {
     }
 
     const dublicateName = contacts.find(contact => contact.name === name);
-    const dublicateNumber = contacts.find(contact => contact.phone === number);
+    const dublicateNumber = contacts.find(contact => contact.phone === phone);
 
     if (dublicateName) {
       toast.error(`${name} is already in contacts.`);
@@ -52,13 +52,13 @@ export function ContactForm({ onSubmit }) {
     }
 
     if (dublicateNumber) {
-      toast.error(`Contact with number ${number} is already in contacts.`);
+      toast.error(`Contact with number ${phone} is already in contacts.`);
       event.target.reset();
       return;
     }
 
     onSubmit();
-    dispatch(addContact({ name, number }));
+    dispatch(addContact({ name, phone }));
     event.target.reset();
     toast.success(`Contact ${name} is added in contacts.`);
   };
@@ -88,7 +88,7 @@ export function ContactForm({ onSubmit }) {
           label="number"
           variant="standard"
           type="text"
-          name="number"
+          name="phone"
           placeholder="123-456-7890"
           inputProps={{
             inputMode: 'numeric',

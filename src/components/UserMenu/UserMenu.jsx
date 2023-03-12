@@ -5,7 +5,7 @@ import { authSelectors, authOperations } from '../../redux/auth';
 
 export  function UserMenu() {
   const dispatch = useDispatch();
-  const name = useSelector(authSelectors.selectUserName);
+  const name = useSelector(authSelectors.selectUserEmail);
 
   return (
     <Box 
