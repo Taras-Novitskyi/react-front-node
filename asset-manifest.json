@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-front-node/static/css/main.c9969133.css",
-    "main.js": "/react-front-node/static/js/main.f2f0b05f.js",
+    "main.js": "/react-front-node/static/js/main.ff433f26.js",
     "static/js/610.0cf46082.chunk.js": "/react-front-node/static/js/610.0cf46082.chunk.js",
     "static/js/969.9f081064.chunk.js": "/react-front-node/static/js/969.9f081064.chunk.js",
     "static/js/658.075aa643.chunk.js": "/react-front-node/static/js/658.075aa643.chunk.js",
@@ -11,7 +11,7 @@
     "static/js/161.0e27019b.chunk.js": "/react-front-node/static/js/161.0e27019b.chunk.js",
     "index.html": "/react-front-node/index.html",
     "main.c9969133.css.map": "/react-front-node/static/css/main.c9969133.css.map",
-    "main.f2f0b05f.js.map": "/react-front-node/static/js/main.f2f0b05f.js.map",
+    "main.ff433f26.js.map": "/react-front-node/static/js/main.ff433f26.js.map",
     "610.0cf46082.chunk.js.map": "/react-front-node/static/js/610.0cf46082.chunk.js.map",
     "969.9f081064.chunk.js.map": "/react-front-node/static/js/969.9f081064.chunk.js.map",
     "658.075aa643.chunk.js.map": "/react-front-node/static/js/658.075aa643.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.c9969133.css",
-    "static/js/main.f2f0b05f.js"
+    "static/js/main.ff433f26.js"
   ]
 }
