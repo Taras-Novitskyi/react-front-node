@@ -1,8 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-axios.defaults.baseURL =
-  'http://localhost:3001/api/';
+axios.defaults.baseURL = 'https://nodejs-rest-api-zirx.onrender.com/api/';
 
 const token = {
   set(token) {
@@ -58,7 +57,7 @@ const fetchCurrentUser = createAsyncThunk(
     token.set(persistedToken);
     try {
       const { data } = await axios.get('/users/current');
-      return data.ResponseBody;
+      return data.ResponseBody.user;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
