@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-front-node/static/css/main.c9969133.css",
+    "main.js": "/react-front-node/static/js/main.780fd734.js",
+    "static/js/610.0cf46082.chunk.js": "/react-front-node/static/js/610.0cf46082.chunk.js",
+    "static/js/969.9f081064.chunk.js": "/react-front-node/static/js/969.9f081064.chunk.js",
+    "static/js/658.075aa643.chunk.js": "/react-front-node/static/js/658.075aa643.chunk.js",
+    "static/js/215.26f16fad.chunk.js": "/react-front-node/static/js/215.26f16fad.chunk.js",
+    "static/js/710.472e6bb9.chunk.js": "/react-front-node/static/js/710.472e6bb9.chunk.js",
+    "static/js/482.88793c4b.chunk.js": "/react-front-node/static/js/482.88793c4b.chunk.js",
+    "static/js/161.0e27019b.chunk.js": "/react-front-node/static/js/161.0e27019b.chunk.js",
+    "index.html": "/react-front-node/index.html",
+    "main.c9969133.css.map": "/react-front-node/static/css/main.c9969133.css.map",
+    "main.780fd734.js.map": "/react-front-node/static/js/main.780fd734.js.map",
+    "610.0cf46082.chunk.js.map": "/react-front-node/static/js/610.0cf46082.chunk.js.map",
+    "969.9f081064.chunk.js.map": "/react-front-node/static/js/969.9f081064.chunk.js.map",
+    "658.075aa643.chunk.js.map": "/react-front-node/static/js/658.075aa643.chunk.js.map",
+    "215.26f16fad.chunk.js.map": "/react-front-node/static/js/215.26f16fad.chunk.js.map",
+    "710.472e6bb9.chunk.js.map": "/react-front-node/static/js/710.472e6bb9.chunk.js.map",
+    "482.88793c4b.chunk.js.map": "/react-front-node/static/js/482.88793c4b.chunk.js.map",
+    "161.0e27019b.chunk.js.map": "/react-front-node/static/js/161.0e27019b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9969133.css",
+    "static/js/main.780fd734.js"
+  ]
+}
